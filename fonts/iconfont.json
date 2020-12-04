@@ -1,0 +1,16 @@
+{
+  "id": "2244639",
+  "name": "jingdong(京东)",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "京东页面还原",
+  "glyphs": [
+    {
+      "icon_id": "15000163",
+      "name": "icon_ tips_line",
+      "font_class": "icon_tips_line",
+      "unicode": "e66f",
+      "unicode_decimal": 58991
+    }
+  ]
+}

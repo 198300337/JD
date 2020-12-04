@@ -1,0 +1,102 @@
+body {
+    height: 2000px;
+}
+
+#Aa {
+    width: 990px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#Aa #logo {
+    position: relative;
+    width: 300px;
+    margin: 10px 0;
+    height: 60px;
+    float: left;
+}
+
+#Aa #logo img {
+    width: 170px;
+    height: 60px;
+    cursor: pointer;
+}
+
+#Aa #logo .list-link {
+    color: #666;
+}
+
+#Aa #logo b {
+    display: block;
+    width: 110px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: url(../img/3/ia_100000003.png);
+    font-weight: bold;
+}
+
+#Aa .list-linka {
+    position: relative;
+    color: #999;
+    float: right;
+    top: 52px;
+}
+
+#Aa .list-linka b {
+    display: inline-block;
+    width: 18px;
+    height: 14px;
+    margin: 0 5px;
+    background: url(../img/3/ia_100000004.png) no-repeat;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+#content {
+    clear: both;
+    position: relative;
+}
+
+#content #wrap {
+    background: #fff8f0;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    position: relative;
+}
+
+#content #wrap .wrap-a {
+    width: 90%;
+    margin: auto;
+}
+
+#content #wrap p {
+    color: #999;
+    font-size: 12px;
+}
+
+#content #wrap p a {
+    color: #333;
+}
+
+#content #wrap .iconicon_tips_line {
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+#banner-A {
+    width: 100%;
+    height: 475px;
+    background-color: #9bd9fa;
+}
+
+#banner-A #banner {
+    margin: 0 auto;
+    position: relative;
+    z-index: 3;
+    height: 475px;
+    background: url(../img/3/ia_100000000506.jpg) 0px 0px no-repeat;
+}
