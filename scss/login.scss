@@ -1,0 +1,301 @@
+#Aa {
+    width: 990px;
+    margin: 0 auto;
+    position: relative;
+    #logo {
+        position: relative;
+        width: 300px;
+        margin: 10px 0;
+        height: 60px;
+        float: left;
+        img {
+            width: 170px;
+            height: 60px;
+            cursor: pointer;
+        }
+        .list-link {
+            color: #666;
+        }
+        b {
+            display: block;
+            width: 110px;
+            height: 40px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            background: url(../img/3/ia_100000003.png);
+            font-weight: bold;
+        }
+    }
+    .list-linka {
+        position: relative;
+        color: #999;
+        float: right;
+        top: 52px;
+        b {
+            display: inline-block;
+            width: 18px;
+            height: 14px;
+            margin: 0 5px;
+            background: url(../img/3/ia_100000004.png) no-repeat;
+            overflow: hidden;
+            vertical-align: middle;
+        }
+    }
+}
+
+#content {
+    clear: both;
+    position: relative;
+    #wrap {
+        background: #fff8f0;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        .wrap-a {
+            display: inline-block;
+            text-align: center;
+            width: 90%;
+            .iconicon_tips {
+                vertical-align: top;
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                margin-top: -2px;
+            }
+            p {
+                vertical-align: middle;
+                color: #999;
+                font-size: 12px;
+                display: inline-block;
+                a {
+                    color: #333;
+                }
+            }
+        }
+    }
+}
+
+#banner-A {
+    width: 100%;
+    height: 475px;
+    background-color: #000000;
+    #banner {
+        width: 990px;
+        margin: auto;
+        position: relative;
+        z-index: 3;
+        height: 475px;
+        background: url(../img/3/ia_100000022.jpg) 0px 0px no-repeat;
+        .register {
+            position: relative;
+            z-index: 4;
+            background: #fff;
+            overflow: visible;
+            width: 346px;
+            height: 426px;
+            float: right;
+            top: 10px;
+            .warning {
+                background: #fff8f0;
+                width: 100%;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                text-align: center;
+                i {
+                    vertical-align: middle;
+                    display: inline-block;
+                    width: 16px;
+                    height: 16px;
+                    margin-top: -8px;
+                }
+                p {
+                    color: #999;
+                    font-size: 12px;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+            }
+            .Qr {
+                width: 346;
+                height: 54px;
+                .QRcode {
+                    width: 173px;
+                    height: 54px;
+                    font-size: 18px;
+                    font-family: "microsoft yahei";
+                    text-align: center;
+                    border-bottom: 1px solid #f4f4f4;
+                    background: #fff;
+                    display: block;
+                    float: left;
+                    line-height: 54px;
+                    a {
+                        width: 99%;
+                        height: 18px;
+                        border-right: 1px solid #f4f4f4;
+                        text-decoration: none;
+                        font-weight: 700;
+                        color: #e4393c;
+                    }
+                }
+                .Accountlogin {
+                    width: 173px;
+                    height: 54px;
+                    font-size: 18px;
+                    font-family: "microsoft yahei";
+                    text-align: center;
+                    border-bottom: 1px solid #f4f4f4;
+                    background: #fff;
+                    display: block;
+                    float: right;
+                    line-height: 54px;
+                    a {
+                        width: 99%;
+                        height: 18px;
+                        border-right: 1px solid #f4f4f4;
+                        text-decoration: none;
+                        color: #666
+                    }
+                }
+            }
+            .QRcode-a {
+                position: relative;
+                height: 168px;
+                margin-top: 18px;
+                text-align: center;
+                .QRcode-aa {
+                    border: 1px solid #f4f4f4;
+                    padding: 8px;
+                    width: 155px;
+                    position: relative;
+                    left: 84px;
+                    img {
+                        width: 147px;
+                        height: 147px;
+                    }
+                }
+                .qrc {
+                    margin-top: 20px;
+                    li {
+                        display: inline-block;
+                        a {
+                            color: #e4393c;
+                        }
+                    }
+                }
+                .qrd {
+                    height: 25px;
+                    line-height: 25px;
+                    margin-top: 10px;
+                    li {
+                        display: inline-block;
+                        font-family: "microsoft yahei";
+                        color: #999;
+                        line-height: 25px;
+                        vertical-align: middle;
+                    }
+                    .aa {
+                        display: inline-block;
+                        width: 25px;
+                        height: 25px;
+                        background: url(../img/3/ia_100000018.png) 0 0 no-repeat;
+                        vertical-align: middle;
+                    }
+                    .ab {
+                        display: inline-block;
+                        width: 25px;
+                        height: 25px;
+                        background: url(../img/3/ia_100000018.png) -27px 0 no-repeat;
+                        vertical-align: middle;
+                    }
+                    .ac {
+                        display: inline-block;
+                        width: 25px;
+                        height: 25px;
+                        background: url(../img/3/ia_100000018.png) -54px 0 no-repeat;
+                        vertical-align: middle;
+                    }
+                }
+            }
+            .footer {
+                width: 346px;
+                height: 50px;
+                background-color: #fcfcfc;
+                position: absolute;
+                bottom: 0;
+                border-top: 1px solid #f4f4f4;
+                line-height: 50px;
+                font-size: 12px;
+                div {
+                    display: inline-block;
+                }
+                .footera {
+                    margin-left: 20px;
+                    .footeraa {
+                        b {
+                            display: inline-block;
+                            width: 19px;
+                            height: 18px;
+                            background: url(../img/3/ia_100000020.png) 0 0 no-repeat;
+                            vertical-align: middle;
+                        }
+                        a {
+                            color: #666;
+                        }
+                    }
+                    .footerab {
+                        b {
+                            display: inline-block;
+                            width: 19px;
+                            height: 18px;
+                            background: url(../img/3/ia_100000020.png) -20px 0 no-repeat;
+                            vertical-align: middle;
+                        }
+                        a {
+                            color: #666;
+                        }
+                    }
+                    span {
+                        color: #ccc;
+                        padding: 0 5px;
+                    }
+                }
+                .footerb {
+                    float: right;
+                    margin-right: 20px;
+                    a {
+                        color: #b61d1d;
+                        font-size: 14px;
+                        b {
+                            display: inline-block;
+                            width: 16px;
+                            height: 16px;
+                            background: url(../img/3/ia_100000021.png) -104px -75px no-repeat;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#footer {
+    width: 990px;
+    margin: 0 auto;
+    margin-top: 15px;
+    .list-footera {
+        text-align: center;
+        a {
+            margin: 0 10px;
+            color: #666;
+        }
+    }
+    .list-footerb {
+        font-size: 13px;
+        margin: 10px 0;
+        text-align: center;
+    }
+}

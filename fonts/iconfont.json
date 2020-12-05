@@ -6,6 +6,13 @@
   "description": "京东页面还原",
   "glyphs": [
     {
+      "icon_id": "11648661",
+      "name": "icon_tips",
+      "font_class": "icon_tips",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
       "icon_id": "15000163",
       "name": "icon_ tips_line",
       "font_class": "icon_tips_line",
