@@ -4,14 +4,494 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>首页</title>
+    <link rel="stylesheet" href="fonts/footer/iconfont.css">
+    <!-- <link rel="stylesheet" href="fonts/footer/demo.css"> -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
     <link rel="stylesheet" href="css/Style reset.css">
+    <link rel="stylesheet" href="css/swiper-bundle.css">
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            direction: 'vertical', // 垂直切换选项
+            loop: true, // 循环模式选项
+
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // 如果需要滚动条
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        })
+        var Swiper = require('swiper');
+        var mySwiper = new Swiper('.swiper-container', { /* ... */ });
+
+        //ES
+        import Swiper from 'swiper';
+        var mySwiper = new Swiper('.swiper-container', { /* ... */ });
+    </script>
 </head>
 
 <body>
-    <h1>111</h1>
-    <!-- <img src='img/ia_100000001720.gif' alt=""> -->
-    <img src="img/ia_200000407.png" alt="">
+    <!-- 顶部 -->
+    <div class="header">
+        <div class="wrap-header">
+            <div class="region">
+                <i class="iconfont iconiconfontlocationfill"></i><a href="">河南</a>
+            </div>
+            <ul>
+                <li class="dl">
+                    <a href="html/login.html" class="logoin">你好,  请登录</a>&nbsp;&nbsp;
+                    <a href="html/register.html" class="reginster">免费注册</a>
+                </li>
+                <li class="spacer"></li>
+                <li class="dd"><a href="">我的订单</a></li>
+                <li class="spacer"></li>
+                <li class="wd">
+                    <a href="">我的京东 <i class="iconfont iconarrowdown"></i></a>
+                </li>
+                <li class="spacer"></li>
+                <li class="hy">
+                    <a href="">京东会员</a>
+                </li>
+                <li class="spacer"></li>
+                <li class="qy">
+                    <a href="">企业采购 <i class="iconfont iconarrowdown"></i></a>
+                </li>
+                <li class="spacer"></li>
+                <li class="kh">
+                    <a href="">客户服务 <i class="iconfont iconarrowdown"></i></a>
+                </li>
+                <li class="spacer"></li>
+                <li class="dh">
+                    <a href="">网站导航 <i class="iconfont iconarrowdown"></i></a>
+                </li>
+                <li class="spacer"></li>
+                <li class="sj">
+                    <a href="">手机京东</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- logo 搜索 -->
+    <div class="seek">
+        <div class="wrap-seek">
+            <div id="logao">
+                <a href=""></a>
+            </div>
+            <!-- 搜索框 -->
+            <div class="wp-seek">
+                <input type="text" placeholder="年底囤货"><span class="iconfont iconzhaoxiangji"></span>
+                <button><i class="iconfont iconsousuo"></i></button>
+            </div>
+            <div class="shop">
+                <div class="wrap-shop">
+                    <i class="iconfont icongouwuche"></i>
+                    <div class="sl">0</div>
+                    <a href="">我的购物车</a>
+                </div>
+            </div>
+            <div class="lia">
+                <a href="" class="lk"></a>
+            </div>
+            <ul class="ts">
+                <li class="aa"><a href="">居家暖冬购</a></li>
+                <li><a href="">运动大牌</a></li>
+                <li><a href="">看榜购机</a></li>
+                <li><a href="">电脑数码</a></li>
+                <li><a href="">潮流服饰</a></li>
+                <li><a href="">居家暖冬</a></li>
+                <li><a href="">100-50</a></li>
+                <li><a href="">大雪节气</a></li>
+                <li>
+                    <a href="">家清制品</a>
+                </li>
+            </ul>
+            <ul class="mu">
+                <li>
+                    <a href="" class="ms">秒杀</a>
+                </li>
+                <li><a href="" class="yhj">优惠卷</a></li>
+                <li> <a href="">PLUS会员</a></li>
+                <li><a href="">品牌闪购</a></li>
+                <li><a href="">拍卖</a></li>
+                <li><a href="">京东家电</a></li>
+                <li><a href="">京东超市</a></li>
+                <li><a href="">京东生鲜</a></li>
+                <li><a href="">京东国际</a></li>
+                <li><a href="">京东金融</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 轮播大图部分 导航-->
+    <div class="content">
+        <a href="" class="banner"></a>
+        <div class="wrap-content">
+            <!-- 左侧导航 -->
+            <div class="leftsideBar">
+                <ul>
+                    <li>
+                        <a href="">家用电器</a>
+                    </li>
+                    <li>
+                        <a href="">手机</a>/
+                        <a href="">运营商</a>/
+                        <a href="">数码</a>
+                    </li>
+                    <li>
+                        <a href="">电脑</a>/
+                        <a href="">办公</a>/
+                    </li>
+                    <li>
+                        <a href="">家居</a>/
+                        <a href="">家居</a>/
+                        <a href="">家装</a>/
+                        <a href="">厨具</a>
+                    </li>
+                    <li>
+                        <a href="">男装</a>/
+                        <a href="">女装</a>/
+                        <a href="">童装</a>/
+                        <a href="">内衣</a>
+                    </li>
+                    <li>
+                        <a href="">美妆</a>/
+                        <a href="">个户清洁</a>/
+                        <a href="">宠物</a>
+                    </li>
+                    <li>
+                        <a href="">女鞋</a>/
+                        <a href="">箱包</a>/
+                        <a href="">钟表</a>/
+                        <a href="">珠宝</a>
+                    </li>
+                    <li>
+                        <a href="">男鞋</a>/
+                        <a href="">运动</a>/
+                        <a href="">户外</a>
+                    </li>
+                    <li>
+                        <a href="">房产</a>/
+                        <a href="">汽车</a>/
+                        <a href="">汽车用品</a>
+                    </li>
+                    <li>
+                        <a href="">母婴</a>/
+                        <a href="">玩具乐器</a>
+                    </li>
+                    <li>
+                        <a href="">食品</a>/
+                        <a href="">酒类</a>/
+                        <a href="">生鲜</a>/
+                        <a href="">特产</a>
+                    </li>
+                    <li>
+                        <a href="">艺术</a>/
+                        <a href="">礼品鲜花</a>/
+                        <a href="">农资绿植</a>
+                    </li>
+                    <li>
+                        <a href="">医药保健</a>/
+                        <a href="">计生情趣</a>
+                    </li>
+                    <li>
+                        <a href="">图书</a>/
+                        <a href="">文娱</a>/
+                        <a href="">教育</a>/
+                        <a href="">电子书</a>
+                    </li>
+                    <li>
+                        <a href="">机票</a>/
+                        <a href="">酒店</a>/
+                        <a href="">旅游</a>/
+                        <a href="">生活</a>
+                    </li>
+                    <li>
+                        <a href="">理财</a>/
+                        <a href="">众筹</a>/
+                        <a href="">白条</a>/
+                        <a href="">保险</a>
+                    </li>
+                    <li>
+                        <a href="">安装</a>/
+                        <a href="">维修</a>/
+                        <a href="">清洗</a>/
+                        <a href="">二手</a>
+                    </li>
+                    <li><a href="">工业品</a></li>
+                </ul>
+                <!-- 大轮播图 -->
+                <div class="bigslideshow">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 倒计时秒杀 -->
+    <div class="seckill">
+        <div class="list-seckill"></div>
+    </div>
+    <div class="promotion">
+        <div class="wrap-promotion">
+            <div class="wrap-pa"></div>
+        </div>
+    </div>
+    <div class="feature">
+        <div class="wrap-feature"></div>
+    </div>
+    <div class="discover">
+        <div class="wrap-discover"></div>
+    </div>
+    <div class="featureB">
+        <div class="wrap-featureB"></div>
+    </div>
+    <div class="channel">
+        <div class="wrap-channel"></div>
+    </div>
+    <!--底部-->
+    <div class="footers">
+        <div class="footer">
+            <div class="variety">
+                <!--服务部分-->
+                <div class="type variety-ineer">
+                    <ul class="clearfix">
+                        <li>
+                            <h5 class="ineer-one"></h5>
+                            <p>品类齐全，轻松购物</p>
+                        </li>
+                        <li>
+                            <h5 class="ineer-two"></h5>
+                            <p>多仓直发，急速配送</p>
+                        </li>
+                        <li>
+                            <h5 class="ineer-three"></h5>
+                            <p>正品行货，精致服务</p>
+                        </li>
+                        <li>
+                            <h5 class="ineer-four"></h5>
+                            <p>天天低价，畅选无忧</p>
+                        </li>
+                    </ul>
+                </div>
+                <!--配送特色-->
+                <div class="delivery">
+                    <div class="express type">
+                        <ul>
+                            <li>
+                                <h2>购物指南</h2>
+                            </li>
+                            <li><a href="#">购物流程</a></li>
+                            <li><a href="#">会员介绍</a></li>
+                            <li><a href="#">甚或旅行</a></li>
+                            <li><a href="#">常见问题</a></li>
+                            <li><a href="#">大家电</a></li>
+                            <li><a href="#">客服联系</a></li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <h2>配送方式</h2>
+                            </li>
+                            <li><a href="#">上门自提</a></li>
+                            <li><a href="#">211限时达</a></li>
+                            <li><a href="#">配送查询</a></li>
+                            <li><a href="#">收费标准</a></li>
+                            <li><a href="#">海外配送</a></li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <h2>支付方式</h2>
+                            </li>
+                            <li><a href="#">货到付款</a></li>
+                            <li><a href="#">在线支付</a></li>
+                            <li><a href="#">分期支付</a></li>
+                            <li><a href="#">邮局汇款</a></li>
+                            <li><a href="#">公司转账</a></li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <h2>售后服务</h2>
+                            </li>
+                            <li><a href="#">售后政策</a></li>
+                            <li><a href="#">价格保护</a></li>
+                            <li><a href="#">退款说明</a></li>
+                            <li><a href="#">返修/退换货</a></li>
+                            <li><a href="#">取消订单</a></li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <h2>特斯服务</h2>
+                            </li>
+                            <li><a href="#">夺宝记</a></li>
+                            <li><a href="#">DIY撞击</a></li>
+                            <li><a href="#">延保服务</a></li>
+                            <li><a href="#">京东E卡</a></li>
+                            <li><a href="#">京东通信</a></li>
+                            <li><a href="#">京东智能座机</a></li>
+                        </ul>
+                        <ul class="fin">
+                            <li>
+                                <h2>京东自营覆盖区县</h2>
+                            </li>
+                            <li>
+                                <p>京东已向全国1661个县区提供自</p>
+                                <p>营配送服务，支持活到付款，</p>
+                                <p>pos机刷卡和售后上门服务。</p>
+                            </li>
+                            <li class="shing">
+                                <a href="#">查看详情
+                <i class="sing">></i>
+              </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--京东广告-->
+                <div class="we type">
+                    <ul class="clearfix">
+                        <li>
+                            <a href="#">关于我们</a>
+                        </li>
+                        <li class="spacer"></li>
+                        <li>
+                            <a href="#">联系我们</a>
+                        </li>
+                        <li class="spacer"></li>
+                        <li>
+                            <a href="#">联系客服</a>
+                        </li>
+                        <li class="spacer"></li>
+                        <li>
+                            <a href="#">合作招商</a>
+                        </li>
+                        <li class="spacer"></li>
+                        <li>
+                            <a href="#">商家帮助</a>
+                        </li>
+                        <li class="spacer"></li>
+                        <li>
+                            <a href="#">音效中心</a>
+                        </li>
+                        <li class="spacer"></li>
+                        <li>
+                            <a href="#">手机京东</a>
+                        </li>
+                        <li class="spacer"></li>
+                        <li>
+                            <a href="#">友情链接</a>
+                        </li>
+                        <li class="spacer"></li>
+                        <li>
+                            <a href="#">销售联盟</a>
+                        </li>
+                        <li class="spacer"></li>
+                        <li>
+                            <a href="#">京东社区</a>
+                        </li>
+                        <li class="spacer"></li>
+                        <li>
+                            <a href="#">收购京东</a>
+                        </li>
+                        <li class="spacer"></li>
+                        <li>
+                            <a href="#">风险监测</a>
+                        </li>
+                        <li class="spacer"></li>
+                        <li>
+                            <a href="#">意思政策</a>
+                        </li>
+                        <li>
+                            <a href="#">京东公益</a>
+                        </li>
+                        <li class="spacer"></li>
+                        <li>
+                            <a href="#">English Site</a>
+                        </li>
+                        <li class="spacer"></li>
+                        <li>
+                            <a href="#">Medals & IR</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--京东版权-->
+                <div class="type cop">
+                    <p class="COP-1">
+                        <a href="#">京公网安备 11000001000088号</a>
+                        <i class="spacer"></i>
+                        <span>京ICP证070359号</span>
+                        <a href="#">互联网要药品信息服务资格证编号(京)-经营性-2014-0008</a>
+                        <i class="spacer"></i>
+                        <span>新出发京零&nbsp字第大120007号</span>
+                    </p>
+                    <p class="cop-2">
+                        <span>互联网出版许可证编号新出网证(京)字150号</span>
+                        <i class="spacer"></i>
+                        <a href="#">出版物经营许可证</a>
+                        <a href="#">网络文化经营许可证网文[2014]2148-348号</a>
+                        <i class="spacer"></i>
+                        <span>违法和不良信息举报电话：4006561155</span>
+                    </p>
+                    <p class="cop-3">
+                        <span>Copyright © 2004 - </span>
+                        <i class="spacer"></i>
+                        <span>
+                          <span>消费者维权热线：4006067733</span> &nbsp; &nbsp;
+                        <a href="#">经营证照</a>
+                        </span>
+                        <i class="spacer"></i>
+                        <span>(京)网械平台备字(2018)第00003号</span>
+                        <i class="spacer"></i>
+                        <a href="#">营业执照</a>
+                    </p>
+                    <p class="cop-4">
+                        <a href="#">
+                            <i class="one"></i> &nbsp; Global Site
+                        </a>
+                        <i class="spacer"></i>
+                        <a href="#">
+                            <i class="two"></i> &nbsp; Сайт России
+                        </a>
+                        <i class="spacer"></i>
+                        <a href="#">
+                            <i class="three"></i> &nbsp; Situs Indonesia
+                        </a>
+                        <i class="spacer"></i>
+                        <a href="#">
+                            <i class="four"></i> &nbsp; Sitio de España
+                        </a>
+                        <i class="spacer"></i>
+                        <a href="#">
+                            <i class="five"></i> &nbsp; เว็บไซต์ประเทศไทย
+                        </a>
+                    </p>
+                    <p class="cop-5">
+                        <span>京东旗下网站:</span> &nbsp;
+                        <a href="#">京东钱包</a>
+                        <i class="spacer"></i>
+                        <a href="#">京东云</a>
+                    </p>
+                    <!--举报网站-->
+                    <div class="reoprt type">
+                        <p>
+                            <a href="#" class="reoprt-1"></a>
+                            <a href="#" class="reoprt-2"></a>
+                            <a href="#" class="reoprt-3"></a>
+                            <a href="#" class="reoprt-4"></a>
+                            <a href="#" class="reoprt-5"></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

@@ -1,3 +1,63 @@
+body,
+ul,
+dl,
+dt,
+dd,
+p,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+img,
+table,
+fieldset,
+legend {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+img,
+fieldset {
+    border: 0;
+}
+
+img {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 100;
+}
+
+body {
+    font-family: "微软雅黑";
+}
+
+input,
+a {
+    outline: none;
+}
+
 body {
     font: 12px/1.5 \5b8b\4f53, Arial, sans-serif;
     color: #666;
@@ -11,51 +71,6 @@ a {
 
 a:hover {
     color: #C81623
-}
-
-a,
-address,
-b,
-big,
-blockquote,
-body,
-center,
-cite,
-code,
-dd,
-del,
-div,
-dl,
-dt,
-em,
-fieldset,
-font,
-form,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-html,
-i,
-iframe,
-img,
-ins,
-label,
-legend,
-li,
-ol,
-p,
-pre,
-small,
-span,
-strong,
-u,
-ul,
-var {
-    margin: 0;
-    padding: 0
 }
 
 ol,
@@ -96,4 +111,59 @@ u {
 
 .hide {
     display: none
+}
+
+body,
+ul,
+dl,
+dt,
+dd,
+p,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+img,
+table,
+fieldset,
+legend {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+img,
+fieldset {
+    border: 0;
+}
+
+img {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 100;
+}
+
+body {
+    font-family: "微软雅黑";
+}
+
+input,
+{
+    outline: none;
 }

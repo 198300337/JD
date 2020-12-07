@@ -6,6 +6,41 @@
   "description": "京东页面还原",
   "glyphs": [
     {
+      "icon_id": "18163114",
+      "name": "购物 车",
+      "font_class": "gouwuche",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "7129325",
+      "name": "照相机",
+      "font_class": "zhaoxiangji",
+      "unicode": "e8fa",
+      "unicode_decimal": 59642
+    },
+    {
+      "icon_id": "4851364",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "3497326",
+      "name": "下箭头",
+      "font_class": "arrowdown",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "457253",
+      "name": "iconfont-location",
+      "font_class": "iconfontlocationfill",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
       "icon_id": "11648661",
       "name": "icon_tips",
       "font_class": "icon_tips",
