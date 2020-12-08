@@ -61,7 +61,6 @@ a {
 body {
     font: 12px/1.5 \5b8b\4f53, Arial, sans-serif;
     color: #666;
-    background: #fff
 }
 
 a {
@@ -161,9 +160,4 @@ h6 {
 
 body {
     font-family: "微软雅黑";
-}
-
-input,
-{
-    outline: none;
 }
