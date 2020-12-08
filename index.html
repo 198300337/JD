@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="fonts/iconfont.css">
     <link rel="stylesheet" href="css/Style reset.css">
     <link rel="stylesheet" href="fonts/footer/iconfont.css">
+    <link rel="stylesheet" href="css/swiper-bundle.css">
 </head>
 
 <body>
@@ -167,9 +168,110 @@
                 </ul>
             </div>
             <!-- <!-- 大轮播图 -->
-            <div class="bigslideshow"></div>
+            <style>
+                .bigslideshow {
+                    width: 590px;
+                    height: 470px;
+                }
+                
+                .bigslideshow #swiper-container-one {
+                    width: 590px;
+                    height: 470px;
+                    outline: none;
+                }
+                
+                .swiper-container {
+                    --swiper-pagination-color: #fff;
+                }
+            </style>
+            <script src="js/swiper.js"></script>
+            <div class="bigslideshow">
+                <div class="swiper-container" id="swiper-container-one">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/10.jpg.webp" alt="" class="aa">
+                        </div>
+                        <div class="swiper-slide"><img src="img/11.jpg.webp" alt=""></div>
+                        <div class="swiper-slide"><img src="img/12.jpg.webp" alt=""></div>
+                        <div class="swiper-slide"><img src="img/13.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/14.jpg.webp" alt=""></div>
+                        <div class="swiper-slide"><img src="img/15.jpg.webp" alt=""></div>
+                        <div class="swiper-slide"><img src="img/16.jpg.webp" alt=""></div>
+                        <div class="swiper-slide"><img src="img/17.jpg.webp" alt=""></div>
+                    </div>
+                    <!-- 如果需要分页器 -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- 如果需要导航按钮 -->
+
+
+                </div>
+                <div class="swiper-button-prev vv"><i><</i></div>
+                <div class="swiper-button-next tt"><i>></i></div>
+            </div>
+            <script>
+                var mySwiper = new Swiper('#swiper-container-one', {
+                    direction: 'horizontal', // 垂直切换选项
+                    loop: true, // 循环模式选项
+                    autoplay: {
+                        delay: 3000,
+                        stopOnLastSlide: false,
+                        disableOnInteraction: true,
+                    },
+                    effect: 'fade',
+
+                    // 如果需要分页器
+                    pagination: {
+                        el: '.swiper-pagination',
+                    },
+
+                    // 如果需要前进后退按钮
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                })
+            </script>
             <!-- 右侧小轮播 -->
-            <div class="little"></div>
+            <script src="dist/js/swiper-bundle.min.js"></script>
+            <div class="little">
+                <div class="swiper-container" id="swiper-container-two">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                    </div>
+                    <!-- 如果需要分页器 -->
+                    <div class="swiper-pagination"></div>
+                    <!-- 如果需要滚动条 -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <script>
+                var mySwiper = new Swiper('#swiper-container-two', {
+                    direction: 'horizontal', // 垂直切换选项
+                    loop: true, // 循环模式选项
+                    autoplay: {
+                        delay: 6000,
+                        stopOnLastSlide: false,
+                        disableOnInteraction: true,
+                    },
+                    effect: 'fade',
+
+                    // 如果需要分页器
+                    pagination: {
+                        el: '.swiper-pagination',
+                    },
+
+                    // 如果需要前进后退按钮
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                })
+            </script>
             <div class="rightsideBar">
                 <div class="ri">
                     <div class="tb">

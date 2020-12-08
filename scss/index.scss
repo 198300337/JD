@@ -331,7 +331,7 @@ body {
         height: 480px;
         margin: 0 auto;
         position: relative;
-        // overflow: hidden;
+        overflow: hidden;
         .leftsideBar {
             position: relative;
             left: 0;
@@ -363,7 +363,72 @@ body {
                 }
             }
         }
-        // .bigslideshow {}
+        // 轮播
+        .bigslideshow {
+            float: left;
+            margin-left: 10px;
+            margin-top: 10px;
+            position: relative;
+            .swiper-slide {
+                width: 590px;
+                height: 470px;
+                img {
+                    display: block;
+                    width: 590px;
+                    height: 470px;
+                }
+            }
+            .vv {
+                position: absolute;
+                top: 50%;
+                border-radius: 0;
+                width: 25px;
+                height: 35px;
+                line-height: 35px;
+                left: 0;
+                color: rgba(255, 255, 255, .8);
+                background-color: rgba(0, 0, 0, .15);
+                border-top-right-radius: 18px;
+                border-bottom-right-radius: 18px;
+                font-size: 20px;
+                // border: none;
+                outline: none;
+            }
+            .vv::after {
+                content: none;
+            }
+            .tt {
+                position: absolute;
+                top: 50%;
+                right: 0;
+                width: 25px;
+                height: 35px;
+                line-height: 35px;
+                text-align: center;
+                line-height: 35px;
+                background-color: rgba(0, 0, 0, .15);
+                background-size: 100%;
+                margin-top: -20px;
+                font-size: 20px;
+                z-index: 2;
+                border: none;
+                color: rgba(255, 255, 255, .8);
+                border-top-left-radius: 18px;
+                border-bottom-left-radius: 18px;
+                outline: none;
+                ;
+            }
+            .tt::after {
+                content: none;
+            }
+        }
+        .little {
+            width: 190px;
+            height: 470px;
+            float: left;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
         .rightsideBar {
             position: relative;
             right: 0;
