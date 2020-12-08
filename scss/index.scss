@@ -1404,7 +1404,123 @@ body {
             right: 0;
             margin-top: -10px;
         }
+        .list-a {
+            width: 1190px;
+            height: 370px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            overflow: hidden;
+            .l1,
+            .l2 {
+                width: 290px;
+                height: 370px;
+                a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    img {
+                        display: block;
+                        width: 290px;
+                        height: 370px;
+                    }
+                }
+            }
+            .l3,
+            .l4 {
+                width: 290px;
+                height: 370px;
+                .na,
+                .nb,
+                .la,
+                .lb {
+                    width: 290px;
+                    height: 180px;
+                    img {
+                        display: block;
+                        width: 290px;
+                        height: 180px;
+                    }
+                }
+            }
+            .l3 {
+                .nb {
+                    margin-top: 10px;
+                }
+            }
+            .l4 {
+                .lb {
+                    margin-top: 10px;
+                }
+            }
+        }
+        .list-b {
+            width: 1190px;
+            height: 560px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 10px;
+            div {
+                width: 290px;
+                height: 180px;
+                a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    img {
+                        display: block;
+                        width: 290px;
+                        height: 180px;
+                    }
+                }
+            }
+        }
     }
+}
+
+.tuijiana {
+    .tuijian {
+        position: relative;
+        width: 150px;
+        height: 45px;
+        font-size: 28px;
+        font-weight: 700;
+        text-align: center;
+        line-height: 45px;
+        padding: 0 30px;
+        margin: 10px auto 20px;
+        overflow: hidden;
+        color: #333;
+    }
+    .tuijian::before {
+        width: 25px;
+        height: 20px;
+        background-image: url(../img/pd.png);
+        content: "";
+        position: absolute;
+        top: 50%;
+        margin-top: -10px;
+        left: 0;
+    }
+    .tuijian::after {
+        width: 25px;
+        height: 20px;
+        background-image: url(../img/pd.png);
+        background-position: -25px 0;
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0;
+        margin-top: -10px;
+    }
+}
+
+.commodity {
+    width: 1190px;
+    height: 986px;
+    margin: 0 auto;
+    border: 1px solid red;
 }
 
 .footerss {
