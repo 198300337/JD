@@ -15,6 +15,7 @@
 
 <body>
     <!-- 顶部 -->
+    <!-- .seckill(倒计时) 结束后自动跳转登录页面 -->
     <div class="header">
         <div class="wrap-header">
             <div class="region">
@@ -237,34 +238,33 @@
             <div class="little">
                 <div class="swiper-container" id="swiper-container-two">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">Slide 1</div>
-                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">
+                            <div class="de1"><img src="img/rlb1.png.webp" alt=""></div>
+                            <div class="de1"><img src="img/rlb2.jpg.webp" alt=""></div>
+                            <div class="de1"><img src="img/rlb3.jpg.webp" alt=""></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="de1"><img src="img/rlb4.jpg.webp" alt=""></div>
+                            <div class="de1"><img src="img/rlb5.jpg.webp" alt=""></div>
+                            <div class="de1"><img src="img/rlb6.png.webp" alt=""></div>
+                        </div>
                     </div>
-                    <!-- 如果需要分页器 -->
-                    <div class="swiper-pagination"></div>
-                    <!-- 如果需要滚动条 -->
-                    <div class="swiper-scrollbar"></div>
+
                 </div>
                 <!-- 如果需要导航按钮 -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev vv"><i><</i></div>
+                <div class="swiper-button-next tt"><i>></i></div>
             </div>
             <script>
                 var mySwiper = new Swiper('#swiper-container-two', {
                     direction: 'horizontal', // 垂直切换选项
                     loop: true, // 循环模式选项
                     autoplay: {
-                        delay: 6000,
+                        delay: 5000,
                         stopOnLastSlide: false,
                         disableOnInteraction: true,
                     },
                     effect: 'fade',
-
-                    // 如果需要分页器
-                    pagination: {
-                        el: '.swiper-pagination',
-                    },
-
                     // 如果需要前进后退按钮
                     navigation: {
                         nextEl: '.swiper-button-next',
@@ -361,9 +361,158 @@
     <!-- 倒计时秒杀 -->
     <div class="seckill">
         <div class="list-seckill">
-            <a href="" class="djs"></a>
+            <a href="" class="djs">
+                <div class="count-a">京东秒杀</div>
+                <div class="count-b"><strong>20:00</strong> 点场 倒计时</div>
+                <span class="hour"></span>
+                <span class="minute"></span>
+                <span class="seconds"></span>
+            </a>
+            <script src="js/swiper.js"></script>
+            <div class="wrap-lb">
+                <div class="swiper-container" id="swiper-container-three">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="aa">
+                                <img src="img/cou1.jpg.webp" alt="">
+                                <h6>布鲁雅尔（Blueair）除菌雷达7410i 空气净化器 家用办公 抑制去除细菌 除甲醛 VOC雾霾PM2.5 除异味</h6>
+                                <div class="a1">
+                                    <span>￥ 4499.00</span><span>￥5299.00</span>
+                                </div>
+                            </div>
+                            <div class="aa"><img src="img/cou2.jpg.webp" alt="">
+                                <h6>布鲁雅尔（Blueair）除菌雷达7410i 空气净化器 家用办公 抑制去除细菌 除甲醛 VOC雾霾PM2.5 除异味</h6>
+                                <div class="a1">
+                                    <span>￥ 4499.00</span><span>￥5299.00</span>
+                                </div>
+                            </div>
+                            <div class="aa"><img src="img/cou3.jpg.webp" alt="">
+                                <h6>布鲁雅尔（Blueair）除菌雷达7410i 空气净化器 家用办公 抑制去除细菌 除甲醛 VOC雾霾PM2.5 除异味</h6>
+                                <div class="a1">
+                                    <span>￥ 4499.00</span><span>￥5299.00</span>
+                                </div>
+                            </div>
+                            <div class="aa"><img src="img/cou4.jpg.webp" alt="">
+                                <h6>布鲁雅尔（Blueair）除菌雷达7410i 空气净化器 家用办公 抑制去除细菌 除甲醛 VOC雾霾PM2.5 除异味</h6>
+                                <div class="a1">
+                                    <span>￥ 4499.00</span><span>￥5299.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="aa"><img src="img/cou5.webp" alt="">
+                                <h6>布鲁雅尔（Blueair）除菌雷达7410i 空气净化器 家用办公 抑制去除细菌 除甲醛 VOC雾霾PM2.5 除异味</h6>
+                                <div class="a1">
+                                    <span>￥ 4499.00</span><span>￥5299.00</span>
+                                </div>
+                            </div>
+                            <div class="aa"><img src="img/cou6.webp" alt="">
+                                <h6>布鲁雅尔（Blueair）除菌雷达7410i 空气净化器 家用办公 抑制去除细菌 除甲醛 VOC雾霾PM2.5 除异味</h6>
+                                <div class="a1">
+                                    <span>￥ 4499.00</span><span>￥5299.00</span>
+                                </div>
+                            </div>
+                            <div class="aa"><img src="img/cou7.webp" alt="">
+                                <h6>布鲁雅尔（Blueair）除菌雷达7410i 空气净化器 家用办公 抑制去除细菌 除甲醛 VOC雾霾PM2.5 除异味</h6>
+                                <div class="a1">
+                                    <span>￥ 4499.00</span><span>￥5299.00</span>
+                                </div>
+                            </div>
+                            <div class="aa"><img src="img/cou8.webp" alt="">
+                                <h6>布鲁雅尔（Blueair）除菌雷达7410i 空气净化器 家用办公 抑制去除细菌 除甲醛 VOC雾霾PM2.5 除异味</h6>
+                                <div class="a1">
+                                    <span>￥ 4499.00</span><span>￥5299.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="aa"><img src="img/cou9.webp" alt="">
+                                <h6>布鲁雅尔（Blueair）除菌雷达7410i 空气净化器 家用办公 抑制去除细菌 除甲醛 VOC雾霾PM2.5 除异味</h6>
+                                <div class="a1">
+                                    <span>￥ 4499.00</span><span>￥5299.00</span>
+                                </div>
+                            </div>
+                            <div class="aa"><img src="img/cou10.webp" alt="">
+                                <h6>布鲁雅尔（Blueair）除菌雷达7410i 空气净化器 家用办公 抑制去除细菌 除甲醛 VOC雾霾PM2.5 除异味</h6>
+                                <div class="a1">
+                                    <span>￥ 4499.00</span><span>￥5299.00</span>
+                                </div>
+                            </div>
+                            <div class="aa"><img src="img/cou11.webp" alt="">
+                                <h6>布鲁雅尔（Blueair）除菌雷达7410i 空气净化器 家用办公 抑制去除细菌 除甲醛 VOC雾霾PM2.5 除异味</h6>
+                                <div class="a1">
+                                    <span>￥ 4499.00</span><span>￥5299.00</span>
+                                </div>
+                            </div>
+                            <div class="aa"><img src="img/cou12.webp" alt="">
+                                <h6>布鲁雅尔（Blueair）除菌雷达7410i 空气净化器 家用办公 抑制去除细菌 除甲醛 VOC雾霾PM2.5 除异味</h6>
+                                <div class="a1">
+                                    <span>￥ 4499.00</span><span>￥5299.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 如果需要分页器 -->
+                    <div class="swiper-pagination"></div>
+                </div>
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev vv"><i><</i></div>
+                <div class="swiper-button-next tt"><i>></i></div>
+            </div>
+            <script src="js/swiper.js"></script>
+            <style type="text/css">
+                .swiper-container {
+                    --swiper-theme-color: #E1251B;
+                }
+            </style>
+            <div class="wrap-ri">
+                <div class="swiper-container" id="swiper-container-four">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/biao2.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/baio1.png" alt="">
+                        </div>
+                    </div>
+                    <!-- 如果需要分页器 -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <script>
+                var mySwiper = new Swiper('#swiper-container-four', {
+                    direction: 'horizontal', // 垂直切换选项
+                    loop: true, // 循环模式选项
+                    autoplay: {
+                        delay: 2000,
+                        stopOnLastSlide: false,
+                        disableOnInteraction: true,
+                    },
+                    pagination: {
+                        el: '.swiper-pagination',
+                    },
+                })
+            </script>
         </div>
     </div>
+    <script>
+        var mySwiper = new Swiper('#swiper-container-three', {
+            direction: 'horizontal', // 垂直切换选项
+            loop: true, // 循环模式选项
+            autoplay: {
+                delay: 3000,
+                stopOnLastSlide: false,
+                disableOnInteraction: true,
+            },
+
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        })
+    </script>
+    <script src="js/countdown.js"></script>
     <!-- 大促销 -->
     <div class="promotion">
         <div class="wrap-promotion">
@@ -522,6 +671,58 @@
             <a href="" class="lf">
                 <img src="img/faxian.png" alt="">
             </a>
+            <script src="js/swiper.js"></script>
+            <div class="dislb">
+                <div class="swiper-container" id="swiper-container-five">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/ca1.jpg.webp" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/ca2.webp" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/ca3.jpg.webp" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/ca4.jpg.webp" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/ca5.jpg.webp" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/ca6.jpg.webp" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/ca7.jpg.webp" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/ca8.jpg.webp" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/ca9.jpg.webp" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/ca10.jpg.webp" alt="">
+                        </div>
+                    </div>
+
+                    <!-- 如果需要滚动条 -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+            <script>
+                var mySwiper = new Swiper('.swiper-container', {
+                    direction: 'vertical', // 垂直切换选项
+                    loop: true, // 循环模式选项
+
+
+                    // 如果需要滚动条
+                    scrollbar: {
+                        el: '.swiper-scrollbar',
+                    },
+                })
+            </script>
         </div>
     </div>
     <!-- 新品首发 -->
