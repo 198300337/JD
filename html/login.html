@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../css/Style reset.css">
     <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../fonts/iconfont.css">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/login.js"></script>
 </head>
 
 <body>
@@ -49,12 +51,33 @@
 
                     <div class="QRcode-a">
                         <p class="zh">
-                            <label for=""></label><input type="text" placeholder="邮箱/用户名/登录手机">
+                            <label for=""></label><input type="text" placeholder="邮箱/用户名/登录手机" id="username-login">
                         </p>
                         <p class="mm">
-                            <label for=""></label><input type="text" placeholder="密码">
+                            <label for=""></label><input type="text" placeholder="密码" id="password-login">
                         </p>
-                        <button>登录</button>
+                        <button id="userlogin">登录</button>
+                        <script>
+                            $("#userlogin").click(function() {
+                                let username = $("#username-login").val();
+                                let password = $("#password-login").val();
+                                $.get(
+                                        `http://jx.xuzhixiang.top/ap/api/login.php?username=${username}&password=${password}`
+                                    )
+                                    .then(res => {
+                                        if (res.code == 1) { //登录成功
+                                            alert(res.msg);
+                                            location.href = "../index.html"
+                                            $("#username-login").val("");
+                                            $("#password-login").val("");
+                                        } else if (res.code == 0) { //登录失败
+                                            alert(res.msg);
+                                            $("#username-login").val("");
+                                            $("#password-login").val("");
+                                        }
+                                    })
+                            })
+                        </script>
                     </div>
                     <div class="footer">
                         <div class="footera">

@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/Style reset.css">
     <link rel="stylesheet" href="../css/register.css">
+    <script src="../js/jquery.js"></script>
 </head>
 
 <body>
@@ -25,12 +26,33 @@
         <p>填写账号信息</p>
     </div>
     <p class="zh">
-        <label for=""></label><input type="text" placeholder="邮箱/用户名/登录手机">
+        <label for=""></label><input type="text" placeholder="邮箱/用户名/登录手机" id="username-info">
     </p>
     <p class="mm">
-        <label for=""></label><input type="text" placeholder="密码">
+        <label for=""></label><input type="text" placeholder="密码" id="password-info">
     </p>
     <button>下一步</button>
+    <script>
+        $("button").click(function() {
+            let username = $("#username-info").val();
+            let password = $("#password-info").val();
+            $.get(
+                    `http://jx.xuzhixiang.top/ap/api/reg.php?username=${username}&password=${password}`
+                )
+                .then(res => {
+                    if (res.code == 1) { //注册成功
+                        alert(res.msg);
+                        location.href = "../html/login.html"
+                        $("#username-info").val("");
+                        $("#password-info").val("");
+                    } else if (res.code == 0) { //验证用户名是否存在
+                        alert(res.msg);
+                        $("#username-info").val("");
+                        $("#password-info").val("");
+                    }
+                })
+        })
+    </script>
     <div class="select">
         <a href="" class="sa"><i></i> 企业用户注册</a>
         <a href="" class="sb"><i></i> 海外用户注册</a>

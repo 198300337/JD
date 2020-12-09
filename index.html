@@ -16,6 +16,7 @@
 <body>
     <!-- 顶部 -->
     <!-- .seckill(倒计时) 结束后自动跳转登录页面 -->
+    <script src="js/swiper.js"></script>
     <div class="header">
         <div class="wrap-header">
             <div class="region">
@@ -181,7 +182,7 @@
                     outline: none;
                 }
                 
-                .swiper-container {
+                .bigslideshow .swiper-container {
                     --swiper-pagination-color: #fff;
                 }
             </style>
@@ -461,7 +462,7 @@
             </div>
             <script src="js/swiper.js"></script>
             <style type="text/css">
-                .swiper-container {
+                .swrap-ri .swiper-container {
                     --swiper-theme-color: #E1251B;
                 }
             </style>
@@ -675,47 +676,47 @@
             <div class="dislb">
                 <div class="swiper-container" id="swiper-container-five">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="img/ca1.jpg.webp" alt="">
+                        <div class="swiper-slide">1
+                            <img src="img/ca1.jpg.webp" alt=""> 2
+                            <img src="img/ca2.webp" alt="" class="waa"> 3
+                            <img src="img/ca3.jpg.webp" alt=""> 4
+                            <img src="img/ca4.jpg.webp" alt="" class="waa">
                         </div>
-                        <div class="swiper-slide">
-                            <img src="img/ca2.webp" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/ca3.jpg.webp" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/ca4.jpg.webp" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/ca5.jpg.webp" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/ca6.jpg.webp" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/ca7.jpg.webp" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/ca8.jpg.webp" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/ca9.jpg.webp" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/ca10.jpg.webp" alt="">
-                        </div>
-                    </div>
 
+                        <div class="swiper-slide">
+                            5<img src="img/ca5.jpg.webp" alt=""> 6
+                            <img src="img/ca6.jpg.webp" alt="" class="waa"> 7
+                            <img src="img/ca7.jpg.webp" alt=""> 8
+                            <img src="img/ca8.jpg.webp" alt="" class="waa">
+
+                        </div>
+                        <div class="swiper-slide">
+                            9<img src="img/ca1.jpg.webp" alt=""> 10
+                            <img src="img/ca8.jpg.webp" alt="" class="waa"> 11
+                            <img src="img/ca5.jpg.webp" alt=""> 12
+                            <img src="img/ca10.png.webp" alt="" class="waa">
+                        </div>
+                        <div class="swiper-slide">
+                            13<img src="img/ca5.jpg.webp" alt=""> 14
+                            <img src="img/ca6.jpg.webp" alt="" class="waa"> 15
+                            <img src="img/ca9.jpg.webp" alt=""> 16
+                            <img src="img/ca10.png.webp" alt="" class="waa">
+                        </div>
+
+                    </div>
                     <!-- 如果需要滚动条 -->
                     <div class="swiper-scrollbar"></div>
                 </div>
             </div>
             <script>
-                var mySwiper = new Swiper('.swiper-container', {
-                    direction: 'vertical', // 垂直切换选项
+                var mySwiper = new Swiper('#swiper-container-five', {
+                    direction: 'horizontal', // 垂直切换选项
                     loop: true, // 循环模式选项
-
+                    autoplay: {
+                        delay: 2000,
+                        stopOnLastSlide: false,
+                        disableOnInteraction: true,
+                    },
 
                     // 如果需要滚动条
                     scrollbar: {
@@ -735,7 +736,34 @@
                         <i></i>
                     </a>
                 </div>
-                <div class="lb"></div>
+                <script src="js/swiper.js"></script>
+                <div class="lb">
+                    <div class="swiper-container" id="swiper-wrapper-6">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="img/rlb1.png.webp" alt=""></div>
+                            <div class="swiper-slide"><img src="img/rlb2.jpg.webp" alt=""></div>
+                            <div class="swiper-slide"><img src="img/rlb3.jpg.webp" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev vv"><i><</i></div>
+                    <div class="swiper-button-next tt"><i>></i></div>
+                </div>
+                <script>
+                    var mySwiper = new Swiper('#swiper-wrapper-6', {
+                        direction: 'horizontal', // 垂直切换选项
+                        loop: true, // 循环模式选项
+                        autoplay: {
+                            delay: 1000,
+                            stopOnLastSlide: false,
+                            disableOnInteraction: true,
+                        },
+                        // 如果需要前进后退按钮
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },
+                    })
+                </script>
             </div>
             <div class="two2">
                 <div class="mrtj">
