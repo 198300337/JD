@@ -1,0 +1,270 @@
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.eot');
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/iconfont.woff2') format('woff2'),
+    url('../font/iconfont.woff') format('woff'),
+    url('../font/iconfont.ttf') format('truetype'),
+    url('../font/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.navBox{
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    background-color: #E3E4E5;
+}
+.nav{
+    width: 1190px;
+    height: 30px;
+    margin: 0 auto;
+    /*background-color: #fff;*/
+}
+.nav ul li{
+    height: 100%;
+    line-height:30px;
+}
+
+/*所有的 dd dropdown*/
+.nav ul>li{
+    position: relative;
+}
+.nav .dd{
+    position: absolute;
+    top: 30px;
+    border: 1px solid #ccc;
+    border-top-color: transparent;
+    line-height: 24px;
+    background-color: #fff;
+    z-index:9999;
+}
+
+
+
+/*左*/
+.nav ul.left li{
+    cursor: pointer;
+    padding:0 7px;
+    /*box-sizing: border-box;*/
+    border: 1px solid transparent;
+    border-bottom: none ;
+
+}
+.nav ul.left li i{
+    font-size: 14px;
+    color: #f10215;
+    margin-right: 4px;
+}
+.nav ul.left li a{
+    color: #999;
+}
+.nav ul li .dt,li a{
+    font-size: 12px ;
+    color: #999999;
+}
+.nav ul li:hover>a{
+    color: #E33333;
+}
+.nav ul li:hover>.dt>a{
+    color: #E33333;
+}
+
+.nav ul.left li .dd{
+    display: none;
+    width: 300px;
+    padding: 10px;
+
+}
+.nav ul li .dd{
+    display: none;
+}
+.nav ul li .dropdown{
+
+    left: -1px;
+}
+
+.nav ul.left li:hover .dd{
+    display: block;
+}
+.nav ul.left li .dd .area .item{
+    float: left;
+    width: 60px;
+    padding: 2px 0;
+
+}
+.nav ul.left li .dd .area .item a{
+    padding:4px 8px;
+}
+.nav ul.left li .dd .area .item a:hover{
+    background-color: #f4f4f4;
+}
+
+.nav ul .item a:hover{
+    color: #e33333;
+}
+
+/*左UL --exclusive*/
+ul.left li .dd .exclusive{
+    width: 262px;
+    margin: 10px  0;
+    border-top: 1px dashed #eee;
+    border-bottom: 1px dashed #eee;
+}
+ul.left li .dd .exclusive ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+ul.left li .dd .exclusive ul>li{
+    width: 42%;
+}
+ul.left li .dd .exclusive p{
+    margin: 9px 0;
+    color: #8f8f8f;
+}
+
+ul.left li .dd .foreign, ul.left ul{
+    display: flex;
+    flex-wrap: wrap;
+    /*margin-bottom: 10px;*/
+}
+ul.left li .dd .foreign ul>li{
+    width: 120px;
+    height: 26px;
+}
+ul.left li .dd .foreign p{
+    margin: 9px 0;
+    color: #8f8f8f;
+}
+
+
+
+
+/*右*/
+.nav ul.right>li{
+float: left;
+}
+.nav ul.right li .dt{
+    position: relative;
+    padding: 0 7px;
+}
+.nav ul.right li .cw-icon{
+    padding-right: 20px;
+}
+.nav ul.right li.spacer{
+    overflow: hidden;
+    margin: 11px 5px 0;
+    width: 1px;
+    height: 10px;
+    background-color: #ccc;
+}
+.nav ul.right li i.iconfont{
+    position: absolute;
+    right: 11px;
+    top: 14px;
+    width: 12px;
+    height: 12px;
+    line-height: 12px;
+    font-size: 30px;
+}
+
+/*右ul --我的京东*/
+.nav .right li .dd>.myjd{
+    display: flex;
+    padding: 10px 0 10px 15px;
+}
+.nav .right li .dd>.myjd ul{
+    display: block;
+    width: 126px;
+}
+.nav .right li .dd>.myjd ul>li{
+    height: 24px;
+}
+
+.nav .right li .dd>.jd-2{
+    border-top: 1px dashed #eee;
+}
+
+/*右ul --企业采购*/
+.nav .right li .dd>.dd-inner{
+    display: block;
+    width: 138px;
+}
+
+.nav ul.right  .dropdown .dd-inner .item{
+    float: left;
+    padding: 2px 0;
+    width: 65px;
+    white-space: nowrap;
+}
+.nav ul.right .dropdown .dd-inner.item a{
+    padding:4px 8px;
+}
+
+/*右ul --客户服务*/
+.nav ul.right .dropdown-ly{
+    right:-1px;
+    width: 170px;
+    padding: 10px 0;
+}
+.nav ul.right .dropdown-ly .client{
+    padding-left: 15px;
+    font-weight: 700;
+    color: #666;
+}
+.nav ul.right .dropdown-ly .merchant{
+    padding-left: 15px;
+    font-weight: 700;
+    color: #666;
+}
+.nav ul.right .dropdown-ly .item{
+    display: inline-block;
+    width: 68px;
+    padding-left: 15px;
+}
+
+/*右ul -- 网站导航*/
+.nav ul.right .dropdown-ler{
+    right: -83px;
+    width: 1188px;
+    padding: 15px 0;
+}
+.nav ul.right .dropdown-ler dl{
+    float: left;
+    width: 255px;
+    padding-left: 20px;
+    border-left: 1px solid #eee;
+}
+.nav ul.right .dropdown-ler dt{
+    margin-bottom: 5px;
+    font-weight: 700;
+    color: #666;
+}
+
+.nav ul.right .dropdown-ler .item{
+    overflow: hidden;
+    float: left;
+    width: 85px;
+    white-space: nowrap;
+}
+.nav ul.right .dropdown-ler .fore1 {
+    width: 340px;
+    border: none;
+    /*height: 120px;*/
+}
+
+
+
+
+
+
+
+

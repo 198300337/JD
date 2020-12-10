@@ -1,0 +1,17 @@
+.commodity {
+    ul {
+        display: block;
+        width: 1190px;
+        height: 322px;
+        position: relative;
+        float: left;
+        display: flex;
+        justify-content: space-between;
+        li {
+            display: inline-block;
+            width: 230px;
+            height: 322px;
+            background-color: aquamarine;
+        }
+    }
+}

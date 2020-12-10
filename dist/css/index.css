@@ -2,97 +2,27 @@
 body {
   background: #f4f4f4; }
 
-.header {
-  height: 30px;
-  border-bottom: 1px solid #ddd;
-  background-color: #e3e4e5; }
-  .header .wrap-header {
-    width: 1190px;
-    height: 100%;
-    background-color: #e3e4e5;
-    margin: 0 auto; }
-    .header .wrap-header .region {
-      padding-left: 7px;
-      padding-right: 7px;
-      height: 28px;
-      line-height: 28px;
-      position: relative;
-      z-index: 1;
-      float: left;
-      border: 1px solid #e3e4e5; }
-      .header .wrap-header .region i {
-        line-height: 30px;
-        font-size: 15px;
-        color: #f10215;
-        margin-right: 4px;
-        vertical-align: middle; }
-      .header .wrap-header .region a {
-        color: #999;
-        vertical-align: middle; }
-      .header .wrap-header .region a:hover {
-        color: #C81623; }
-    .header .wrap-header ul {
-      line-height: 30px;
-      float: right; }
-      .header .wrap-header ul li {
-        display: inline-block; }
-      .header .wrap-header ul i {
-        font-size: 8px;
-        vertical-align: middle; }
-      .header .wrap-header ul .dl {
-        margin-right: 8px;
-        z-index: 3; }
-        .header .wrap-header ul .dl .reginster {
-          color: #f10215; }
-      .header .wrap-header ul a {
-        vertical-align: middle;
-        color: #999; }
-      .header .wrap-header ul a:hover {
-        color: #f10215; }
-      .header .wrap-header ul .spacer {
-        margin: 0 5px;
-        width: 1px;
-        height: 10px;
-        background-color: #ccc; }
-      .header .wrap-header ul .dd {
-        padding-left: 7px;
-        padding-right: 7px; }
-      .header .wrap-header ul .wd {
-        padding-left: 7px; }
-      .header .wrap-header ul .hy {
-        padding-left: 7px;
-        padding-right: 7px; }
-      .header .wrap-header ul .qy {
-        padding-left: 7px; }
-        .header .wrap-header ul .qy a {
-          color: #f10215; }
-          .header .wrap-header ul .qy a i {
-            color: #999; }
-      .header .wrap-header ul .kh {
-        padding-left: 7px; }
-      .header .wrap-header ul .dh {
-        padding-left: 7px; }
-      .header .wrap-header ul .sj {
-        padding-left: 7px;
-        padding-right: 7px; }
-
 .seek {
+  width: 100%;
   height: 140px;
   background: #fff;
-  border-bottom: 1px solid #ddd; }
+  border-bottom: 1px solid #ddd;
+  position: relative; }
   .seek .wrap-seek {
     width: 1190px;
     height: 140px;
-    margin: auto;
-    position: relative;
     z-index: 1;
-    overflow: hidden; }
+    overflow: hidden;
+    margin: 0 auto;
+    position: absolute;
+    left: 173px; }
     .seek .wrap-seek #logao {
       width: 100%;
       height: 100%;
       background-color: #fff; }
       .seek .wrap-seek #logao a {
         display: block;
+        float: left;
         margin-top: 10px;
         width: 190px;
         height: 120px;
@@ -1663,7 +1593,8 @@ body {
 
 .commodity {
   width: 1190px;
-  height: 986px;
+  position: relative;
+  height: 322px;
   margin: 0 auto;
   border: 1px solid red; }
 
