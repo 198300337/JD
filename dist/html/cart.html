@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>cart</title>
+    <link href="../css/Style reset.css" rel="stylesheet">
+    <link href="../css/cart.css" rel="stylesheet">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/cartes.js"></script>
+</head>
+
+<body>
+    <div class="header"></div>
+    <div class="logo"></div>
+    <div class="banner">
+        <div class="title">
+            <h2>全部商品共 : <i>1</i></h2>
+        </div>
+        <div class="cart ">
+            <div class="cart-thead clean">
+                <div class="cart-checkAll fl">
+                    <input type="checkbox"> 全选
+                </div>
+                <div class="cart-name fl">商品</div>
+                <div class="props fl"></div>
+                <div class="cart-unitPrice fl">单价</div>
+                <div class="cart-num fl">数量</div>
+                <div class="subtotal  fl">小计</div>
+                <div class="operator fl">操作</div>
+            </div>
+            <div class="size">
+                <p>您还没有选择商品,去shoping吧~!</p>
+            </div>
+            <div class="cart-list">
+                <!-- <div class="list-item clean">
+                <div class="cell chec">
+                    <input type="checkbox">
+                </div>
+                <div class="cell list-single">
+                    <div class="item-img">
+                        <img alt="" src="image/1.webp">
+                    </div>
+                    <div class="item-name">
+                        <p>防火防爆的身份来到是是红哦忘我如果人给温热二</p>
+                    </div>
+
+                </div>
+                <div class="cell item-props"></div>
+                <div class="cell item-unitPrice">
+                    <p>1231</p>
+                </div>
+                <div class="cell item-num">
+                    <div class="item-num-val">
+                        <a href="javascript:void(0);">+</a>
+                        <input type="text" value="1">
+                        <a href="javascript:void(0);">-</a>
+                    </div>
+                </div>
+                <div class="cell subtotal">
+                    <strong>121212.00</strong>
+                </div>
+                <div class="cell operator">
+                    <a href="#">删除</a>
+                </div>
+
+            </div> -->
+            </div>
+        </div>
+
+        <div class="cart-footer">
+            <div class="cart-left">
+                <p><a href="javascript:void(0);" id="dliet">删除选中的商品</a></p>
+            </div>
+            <div class="cart-right">
+                <button class="fr">去结算</button>
+                <div class="price-sum fr">
+                    <span>总价 : </span>
+                    <i>￥0</i>
+                </div>
+                <div class="select-num fr">已选择<em></em>件商品</div>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+    <script>
+        $(function() {
+            $(".header").load("head.html");
+            $(".logo").load(("logo-navigation.html"));
+            $(".footer").load("footer.html");
+        });
+    </script>
+</body>
+
+</html>
