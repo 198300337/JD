@@ -1,13 +1,15 @@
-html,body{
+html,
+body {
     width: 100%;
     background-color: #fff !important;
 }
-.banner{
+
+.banner {
     width: 990px;
     margin: 0 auto;
 }
 
-.banner .cart .cart-thead{
+.banner .cart .cart-thead {
     display: block;
     height: 32px;
     line-height: 32px;
@@ -19,13 +21,13 @@ html,body{
     position: relative;
 }
 
-
-.banner .title{
+.banner .title {
     position: relative;
     height: 26px;
     overflow: hidden;
 }
-.banner .title h2{
+
+.banner .title h2 {
     position: relative;
     font-weight: 700;
     font-size: 16px;
@@ -37,17 +39,21 @@ html,body{
     margin: 5px 30px 0 0;
     color: #ee3333;
 }
-.banner .title h2 i{
+
+.banner .title h2 i {
     font-family: verdana;
     font-size: 14px;
     color: #E33333;
 }
 
-.list-item{
+.list-item {
     margin-bottom: 20px;
 }
+
+
 /*全选框*/
-.cart-checkAll{
+
+.cart-checkAll {
     height: 18px;
     line-height: 18px;
     padding-top: 7px;
@@ -57,44 +63,58 @@ html,body{
 
 
 /*商品*/
-.cart-name{
+
+.cart-name {
     width: 208px;
 }
-.props{
+
+.props {
     width: 140px;
     height: 32px;
     padding: 0 10px 0 20px;
 }
+
+
 /*单价*/
-.cart-unitPrice{
+
+.cart-unitPrice {
     width: 120px;
     padding-right: 40px;
     text-align: right;
 }
 
+
 /*数量*/
-.cart-num{
+
+.cart-num {
     width: 80px;
     text-align: center;
 }
+
+
 /*小计*/
-.subtotal{
+
+.subtotal {
     width: 100px;
     padding-right: 40px;
     text-align: right;
 }
+
+
 /*操作*/
-.operator{
+
+.operator {
     width: 75px;
 }
 
 
 /*cart-list*/
-.cart-list{
+
+.cart-list {
     margin-bottom: 20px;
 }
 
-.cart-list .list-item{
+.cart-list .list-item {
     /*height: 20px;*/
     position: relative;
     border-style: solid;
@@ -103,11 +123,12 @@ html,body{
     /*background: #d51d1d;*/
 }
 
-.list-item .list-single{
+.list-item .list-single {
     width: 300px;
-    padding: 1px  0 1px  40px;
+    padding: 1px 0 1px 40px;
 }
-.item-img{
+
+.item-img {
     float: left;
     width: 80px;
     height: 80px;
@@ -118,47 +139,47 @@ html,body{
     text-align: center;
     overflow: hidden;
 }
-.item-img img{
+
+.item-img img {
     display: block;
     width: 100%;
     height: 100%;
 }
 
-.cell{
+.cell {
     float: left;
     padding: 15px 0 10px;
 }
 
-.item-props{
+.item-props {
     width: 232px;
     line-height: 20px;
     overflow: hidden;
     padding: 15px 0 0 20px;
 }
 
-.item-unitPrice{
+.item-unitPrice {
     /*padding-right: 40px;*/
     font-family: verdana;
     text-align: right;
     padding: 15px 40px 0 20px;
 }
 
-.item-num{
+.item-num {
     width: 80px;
     background-color: #fff;
 }
-.item-num .item-num-val{
+
+.item-num .item-num-val {
     position: relative;
     overflow: hidden;
     height: 22px;
     width: 80px;
-
 }
 
-.item-num .item-num-val a{
+.item-num .item-num-val a {
     position: absolute;
     border: 1px solid #cacbcb;
-
     height: 18px;
     line-height: 18px;
     padding: 1px 0;
@@ -168,19 +189,21 @@ html,body{
     margin: 0;
     background: #fff;
 }
-.item-num .item-num-val a:nth-of-type(1){
+
+.item-num .item-num-val a:nth-of-type(1) {
     top: 0;
     left: 0;
     border-right: 0;
 }
-.item-num .item-num-val a:nth-of-type(2){
+
+.item-num .item-num-val a:nth-of-type(2) {
     top: 0;
     left: 62px;
     border-letf: 0;
     /*border: 1px solid #cacbcb;*/
 }
 
-.item-num .item-num-val input{
+.item-num .item-num-val input {
     position: absolute;
     left: 17px;
     top: 0;
@@ -196,31 +219,32 @@ html,body{
     color: #333;
 }
 
-.subtotal{
+.subtotal {
     width: 100px;
     padding-right: 25px;
     text-align: right;
     font-family: verdana;
 }
 
-.subtotal strong{
+.subtotal strong {
     color: #333;
     font-weight: 700;
     display: block;
 }
 
-
-.operator a{
+.operator a {
     color: #666;
     display: block;
 }
 
 
 /*----*/
-.banner .cart-footer{
+
+.banner .cart-footer {
     position: relative;
 }
-.cart-right{
+
+.cart-right {
     position: absolute;
     height: 52px;
     right: 0;
@@ -228,7 +252,7 @@ html,body{
     width: 720px;
 }
 
-.cart-right .select-num{
+.cart-right .select-num {
     /*float: right;*/
     color: #999;
     height: 44px;
@@ -236,21 +260,25 @@ html,body{
     margin: 2px 31px 0;
     cursor: pointer;
 }
-.cart-right .select-num em{
+
+.cart-right .select-num em {
     color: #E2231A;
     font-family: verdana;
     font-weight: 700;
     margin: 0 3px;
 }
-.cart-right .price-sum{
-   padding: 10px;
+
+.cart-right .price-sum {
+    padding: 10px;
 }
-.cart-right .price-sum i{
+
+.cart-right .price-sum i {
     font-size: 16px;
     color: #E2231A;
     font-weight: 700;
 }
-.cart-right button{
+
+.cart-right button {
     display: block;
     color: #fff;
     width: 94px;
@@ -262,6 +290,6 @@ html,body{
     background-color: #E33333;
 }
 
-.size{
+.size {
     display: none;
 }

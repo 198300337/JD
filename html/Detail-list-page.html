@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Detail list page</title>
+    <link href="../css/reset.css" rel="stylesheet">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/Detail-list-page.js"></script>
+    <link href="../css/Detail-list-page.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="head"></div>
+    <div class="logo"></div>
+
+    <div class="banner clean">
+        <div class="prod_detail fl">
+            <div id="zoomBox">
+                <div id="midArea">
+                    <img src="../img/2.webp">
+                    <div id="zoom"></div>
+                </div>
+                <div id="bigArea">
+                    <img src="../img/2.webp">
+                </div>
+            </div>
+        </div>
+        <div class="details fr">
+            <p class="title">外星人(Alienware)R11 英特尔酷睿i7 显示器</p>
+            <p class="money">秒杀价: <i>1569</i> 元</p>
+            <div id="btn">
+                <div class="num">
+                    <input type="text" value="1" onkeyup="value=(parseInt((value=value.replace(/\D/g,''))==''||parseInt((value=value.replace(/\D/g,''))==0)?'1':value,10))">
+                    <a href="javascript:void(0)" class="btn-jia">+</a>
+                    <a href="javascript:void(0)" class="btn-jian">-</a>
+                    <button>加入购物车</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+    <script src="js/big-class.js"></script>
+    <script>
+        var dlass = new Zoom();
+        dlass.show();
+    </script>
+    <script>
+        $(function() {
+            //编写jQuery代码
+            $(".head").load("head.html");
+            let sec = location.hash.split("#")[1];
+            $(".logo").load(("logo-navigation.html"), function() {
+                let $prompt = $("#settleup .dorp .prompt");
+                let $i = $("#settleup .ci-num")
+                let sec = location.hash.split("#")[1];
+                // console.log($("#settleup .dorp .prompt"));
+                $.get("http://jx.xuzhixiang.top/ap/api/cart-list.php", {
+                    id: sec
+
+                }, date => {
+                    console.log(date);
+                    let a = 0;
+                    var str = "";
+                    for (let i = 0; i < date.data.length; i++) {
+                        // console.log(date.data[i].pnum);
+                        /*  pdesc: "米多奇"
+                          pid: "285322"
+                          pimg: "image/05.webp"
+                          pname: "零食饮料"
+                          pprice: "700.00"
+                          uid: "38472"*/
+                        a += +date.data[i].pnum;
+                        str += `
+                           <ul id="prpmpt-item" class="clean">
+                           <li>
+                           <div class="p-imgs fl">
+                           <a href="#">
+                              <img src="${date.data[i].pimg}" alt="">
+                            </a>
+                           </div>
+                           <div class="p-name fl">
+                              <a href="#">
+                                 <span>${date.data[i].pname}</span>
+                              </a>
+                             </div>
+                             <div class="p-p-detail fr">
+                                 <span class="p-price">
+                                      <strong>￥<i>${date.data[i].pprice}</i>x<em>${date.data[i].pnum}</em></strong>
+                                 </span>
+                             </div>
+                                 </li>
+                             </ul>
+                                  `;
+                    }
+                    $prompt.html(str);
+                    $i.html(a)
+                    $("#settleup-a").attr("href", "http://localhost:63342/JD/cart.html?id=" + sec + "")
+
+                });
+                if ($("#settleup #prpmpt-item").length > 0) {
+                    console.log("meiyou");
+                    $("#settleup .dorp .prompt .nigoods").hide();
+                    console.log(1);
+                } else {
+                    $("#settleup .dorp .prompt .nigoods").show();
+                }
+            })
+
+
+            $(".footer").load("footer.html");
+
+        });
+    </script>
+</body>
+
+</html>

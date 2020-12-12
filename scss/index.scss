@@ -1832,7 +1832,7 @@ body {
 .tuijiana {
     .tuijian {
         position: relative;
-        width: 150px;
+        width: 180px;
         height: 45px;
         font-size: 28px;
         font-weight: 700;
@@ -1842,6 +1842,9 @@ body {
         margin: 10px auto 20px;
         overflow: hidden;
         color: #333;
+        a {
+            text-decoration: underline;
+        }
     }
     .tuijian::before {
         width: 25px;
